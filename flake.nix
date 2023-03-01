@@ -24,5 +24,13 @@
         home-manager.nixosModules.home-manager
       ];
     };
+    nixosConfigurations.tama = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      system = "aarch64-linux";
+      modules = [
+        ./machines/tama.nix
+        ./hardware-configuration.nix
+      ];
+    };
   };
 }
