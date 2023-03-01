@@ -50,7 +50,7 @@ Networking, desktop environments, global utilities, you name it, `system`'s got 
   - `networking.nix`: Anything that has to do with networking, from Tailscale to DNSCrypt.
   - `utilities.nix`: Packages I couldn't live without when running as `root`.
   - `nix.nix`: Nix configuration. (You have to have Flake support to use Flakes!)
-  - 
+  - `misc.nix`: Anything that didn't fit into the above.
 
 - `desktop/`
   - `desktop.nix`: Miscellaneous GUI and desktop-related things that didn't fit in any other files.
@@ -81,12 +81,12 @@ Naturally, there is things that I want done.
 A short list, if anyone knows enough Nix and feels like helping.
 (I will gladly accept pull requests.)
 
-- 
+- Finish the machine refactor
 
 # Credits
 <!--*'Sorry, SimpleFlips, it's not your turn.'*-->
 
 A big thanks to:
 
-- [fufexan](), for making `nix-gaming` and consequently bringing low-latency PipeWire and easy Windows games to all
-- [All of the Nix and NixOS contributors](), for rethinking package management and Linux as a whole
+- [fufexan](https://github.com/fufexan), for making [`nix-gaming`](https://github.com/fufexan/nix-gaming) and consequently bringing low-latency PipeWire and easy Windows games to all
+- All of the Nix and NixOS contributors [(a very incomplete list of them linked here)](https://github.com/orgs/NixOS/people), for rethinking package management and Linux as a whole and allowing this to exist

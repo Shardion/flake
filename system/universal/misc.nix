@@ -6,7 +6,7 @@
   # I live here
   time.timeZone = "America/Los_Angeles";
 
-  # Kill swap, use earlyoom instead
+  # "Obey EarlyOOM, kill swap!"
   swapDevices = lib.mkForce [ ];
   services.earlyoom.enable = true;
   services.earlyoom.freeMemThreshold = 2;
