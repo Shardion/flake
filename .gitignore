@@ -1,0 +1,9 @@
+assets/backgrounds/*
+assets/backgrounds/
+assets/backgrounds.tar.xz
+./assets/backgrounds/*
+./assets/backgrounds/
+./assets/backgrounds.tar.xz
+configuration.nix
+hardware-configuration.nix
+flake.lock
