@@ -6,13 +6,12 @@
   ];
 
   # Enable optimizations for Nvidia graphics cards
+  # I haven't used Nvidia cards in ages, so this is probably broken
   # !!! ASSUMES THE ONLY GPU IN THE SYSTEM IS THE NVIDIA GPU !!!
 
-  # Force the Nvidia driver as the only hardware-accelerated driver available
+  # Force the Nvidia driver as the only driver available
   services.xserver.videoDrivers = [
     "nvidia"
-    "modesetting"
-    "fbdev"
   ];
 
   # Enable some hardware acceleration-related packages

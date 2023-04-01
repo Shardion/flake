@@ -20,8 +20,6 @@
     ];
     firewall = {
       trustedInterfaces = [ "tailscale0" ];
-      allowedTCPPorts = [ 7777 ];
-      allowedUDPPorts = [ 7777 ];
     };
     dhcpcd.extraConfig = "nohook resolv.conf";
     useDHCP = false;

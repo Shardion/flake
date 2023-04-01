@@ -12,7 +12,7 @@
       };
 
       sessionVariables = {
-        # Hostname emoji.
+        # Hostname emoji - a script that returns an emoji which depends on the current hostname.
         # !!! CURSED HACK !!! Scripts loaded into env vars like this can't have any quotes in them.
         # FIXME: Figure out if there's a better way to do this.
         HOSTNAME_EMOJI = "$(eval '" + builtins.readFile ./hostname-emoji.sh + "')";
@@ -37,11 +37,6 @@
       '';
     };
 
-    programs.nushell = {
-      enable = false;
-      configFile.source = ./nushell/config.nu;
-      envFile.source    = ./nushell/env.nu;
-    };
     programs.starship = {
       enable = true;
       settings = {

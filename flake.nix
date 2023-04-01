@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
     nix-gaming = {
-      url = github:fufexan/nix-gaming;
+      url = github:fufexan/nix-gaming/pw-module;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {

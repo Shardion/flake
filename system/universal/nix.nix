@@ -6,7 +6,7 @@
   # Home Manager != Nix but this is the best spot I have
   home-manager.useUserPackages = true;
 
-  # Allow non-free software. (Sorry, Richard.)
+  # Allow non-free software.
   nixpkgs.config.allowUnfree = true;
 
   # Enable Flakes, the Nix command, and Cachix for the nix-gaming flake.
