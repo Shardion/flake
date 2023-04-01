@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
     nix-gaming = {
-      url = github:fufexan/nix-gaming/pw-module;
+      url = github:fufexan/nix-gaming;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
@@ -20,7 +20,6 @@
       modules = [
         ./machines/mocha.nix
         ./hardware-configuration.nix
-        inputs.nix-gaming.nixosModules.pipewireLowLatency
         home-manager.nixosModules.home-manager
       ];
     };

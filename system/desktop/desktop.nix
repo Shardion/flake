@@ -15,15 +15,12 @@
   # Request the use of XDG portals
   xdg.portal.enable = true;
 
-  # Sound with PipeWire (feat. low-latency)
+  # Sound with PipeWire
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
     pulse.enable = true;
-    lowLatency.enable = true;
   };
   security.rtkit.enable = true;
 
