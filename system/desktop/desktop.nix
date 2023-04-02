@@ -21,6 +21,7 @@
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+    alsa.enable = true; # Needed for BASS, notably used by osu!lazer
   };
   security.rtkit.enable = true;
 
