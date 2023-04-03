@@ -15,13 +15,14 @@
   # Request the use of XDG portals
   xdg.portal.enable = true;
 
-  # Sound with PipeWire
+  # Sound with PipeWire (feat. low-latency)
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     pulse.enable = true;
     alsa.enable = true; # Needed for BASS, notably used by osu!lazer
+    lowLatency.enable = true;
   };
   security.rtkit.enable = true;
 

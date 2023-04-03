@@ -20,7 +20,8 @@
       modules = [
         ./machines/mocha.nix
         ./hardware-configuration.nix
-        home-manager.nixosModules.home-manager
+         home-manager.nixosModules.home-manager
+         nix-gaming.nixosModules.pipewireLowLatency
       ];
     };
     nixosConfigurations.tama = nixpkgs.lib.nixosSystem {
