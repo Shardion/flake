@@ -7,12 +7,11 @@
     ./utilities.nix
     ./games.nix
     ./shells.nix
+    ../universal
   ];
 
   users.users.shardion = {
-    description = "Shardion";
-    isNormalUser = true;
-    extraGroups = [ "doas" "audio" "video" "wheel" "networkmanager" ];
+    extraGroups = [ "audio" "video" "networkmanager" ];
   };
 
 

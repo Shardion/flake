@@ -10,6 +10,7 @@
     ../hardware/keymap-us.nix
 
     ../system/desktop/desktop-gnome.nix
+    ../system/server/openssh.nix
 
     ../user/shardion/desktop
   ];

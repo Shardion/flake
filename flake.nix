@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
+    nixos-hardware.url = github:NixOS/nixos-hardware/master;
     nix-gaming = {
       url = github:fufexan/nix-gaming;
       inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +14,7 @@
     };
   };
 
-  outputs = inputs @ { self, nixpkgs, nix-gaming, home-manager }: {
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, nix-gaming, home-manager }: {
     nixosConfigurations.mocha = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
@@ -30,6 +31,7 @@
       modules = [
         ./machines/tama.nix
         ./hardware-configuration.nix
+        nixos-hardware.nixosModules.raspberry-pi-4
       ];
     };
   };

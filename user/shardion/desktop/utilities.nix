@@ -6,8 +6,6 @@
   home-manager.users.shardion.home.packages = with pkgs; [
     appimage-run # Only from scripts.
     hunspell     # Discord uses it.
-    fortune      # Only from scripts.
-    lolcat       # Only from scripts.
     wl-clipboard # Helix uses it.
   ];
 }
