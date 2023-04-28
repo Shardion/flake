@@ -15,7 +15,7 @@
     enable = true;
     virtualHosts."${config.networking.hostName}.tail354c3.ts.net" = {
       extraConfig = ''
-        reverse_proxy /miniflux/* localhost:7272
+        reverse_proxy /miniflux* localhost:7272
       '';
     };
   };

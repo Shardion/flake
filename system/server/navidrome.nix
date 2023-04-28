@@ -18,7 +18,7 @@
     enable = true;
     virtualHosts."${config.networking.hostName}.tail354c3.ts.net" = {
       extraConfig = ''
-        reverse_proxy /navidrome/* localhost:7271
+        reverse_proxy /navidrome* localhost:7271
       '';
     };
   };
