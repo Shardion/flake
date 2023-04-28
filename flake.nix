@@ -30,7 +30,7 @@
       system = "aarch64-linux";
       modules = [
         ./machines/tama.nix
-        ./hardware-configuration.nix
+        # tama doesn't have hardware-configuration.nix
         nixos-hardware.nixosModules.raspberry-pi-4
       ];
     };
