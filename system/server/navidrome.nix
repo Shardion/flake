@@ -16,7 +16,7 @@
   # Configure Caddy to expose Navidrome
   services.caddy = {
     enable = true;
-    virtualHosts."${config.networking.hostname}.tail354c3.ts.net" = {
+    virtualHosts."${config.networking.hostName}.tail354c3.ts.net" = {
       extraConfig = ''
         reverse_proxy /navidrome localhost:7271
       '';
