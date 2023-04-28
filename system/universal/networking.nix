@@ -81,7 +81,6 @@
   # Does not enable Caddy
   services.caddy = {
     virtualHosts."espresso.tail354c3.ts.net" = {
-      listenAddresses = [ "::1" "127.0.0.1" ];
       extraConfig = ''
         encode zstd gzip
       '';
