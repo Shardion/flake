@@ -5,7 +5,7 @@
     enable = true;
     adminCredentialsFile = "/var/lib/miniflux/admin_credentials";
     config = {
-      BASE_URL = "${config.networking.hostname}.tail354c3.ts.net/miniflux";
+      BASE_URL = "${config.networking.hostName}.tail354c3.ts.net/miniflux";
       LISTEN_ADDR = "[::1]:7272";
     };
   };
