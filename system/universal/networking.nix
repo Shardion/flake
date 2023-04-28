@@ -86,4 +86,9 @@
       '';
     };
   };
+
+  # Allow Caddy to ask for certificates from Tailscale
+  systemd.services.tailscaled = {
+    serviceConfig.Environment = [ "TS_PERMIT_CERT_UID=caddy" ];
+  };
 }

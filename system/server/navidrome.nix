@@ -4,7 +4,7 @@
   services.navidrome = {
     enable = true;
     settings = {
-      Address = "::1";
+      Address = "[::1]";
       Port = 7271;
       MusicFolder = "/var/lib/navidrome/music";
       BaseUrl = "/navidrome";
