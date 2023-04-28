@@ -13,7 +13,7 @@
         imageFile = pkgs.dockerTools.pullImage {
           imageName = "mariadb";
           imageDigest = "sha256:ee4c6eb35613704d68beafb841543d5f42ef502edcba61e8476865f087a9ada8";
-          sha256 = "sha256-q1tPjrjm+mI4uL1pg3g/Xn2nBBeWZ07YneWmtpIw7kI="; # changeme
+          sha256 = "1w3q8ikl2y7cb3r4w6m3jzvhs7ak44v9zdxbhr26yg06i3wi01f2";
           finalImageName = "shardion/seafile-mariadb";
           finalImageTag = "10.6";
         };
@@ -29,12 +29,12 @@
         ];
         extraOptions = [ "--network=seafile-net" ];
       };
-      
+
       memcached = {
         imageFile = pkgs.dockerTools.pullImage {
           imageName = "memcached";
-          imageDigest = "sha256:9af8e788d5f7f4dc82fd49cf4a7efff1a0b5b4673085bc88f3ccb8a1c772ab3e";
-          sha256 = "sha256-c4yzC2Kp8p7tmaC8xpTFqLe/hubeBxZkQ7znEuVnMMY="; # changeme
+          imageDigest = "sha256:3b3fc4d9c49fa284ed6816ea14d990d96187bef2a5fb0ec360e76f36d43c747a";
+          sha256 = "16j2d5ya5xc2699k0bf7zri7asxh19kkhgyln0qr0y8m0jakip6g";
           finalImageName = "shardion/seafile-memcached";
           finalImageTag = "1.6.18";
         };
@@ -47,7 +47,7 @@
         imageFile = pkgs.dockerTools.pullImage {
           imageName = "seafileltd/seafile-mc";
           imageDigest = "sha256:3fbf015c8998bc42fd436d05602520efbb12da14e53fb3b5caa6561928c32a7f";
-          sha256 = "16imi3l60b392jlmi499yz829cn01xxq60kxbfnjw0psk010p8fq"; # changeme
+          sha256 = "1nxgkcig71i8gvf4wnn7sfhda7c6d61wg7c8vcxgy4placiz6aii";
           finalImageName = "shardion/seafile";
           finalImageTag = "10.0.1";
         };
