@@ -80,7 +80,7 @@
   # Configure some general Caddy settings
   # Does not enable Caddy
   services.caddy = {
-    virtualHosts."espresso.tail354c3.ts.net" = {
+    virtualHosts."tama.tail354c3.ts.net" = {
       extraConfig = ''
         encode zstd gzip
       '';
