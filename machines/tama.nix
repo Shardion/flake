@@ -7,6 +7,7 @@
     ../specializations/miniflux.nix
     ../specializations/navidrome.nix
     ../specializations/seafile-oci.nix
+    ../specializations/cdn.nix
     ../system/universal
 
     ../user/shardion/universal
