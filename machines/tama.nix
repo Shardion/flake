@@ -3,10 +3,10 @@
 {
   # Tama, my Raspberry Pi 4B 8GB
   imports = [
-    ../system/server/openssh.nix
-    ../system/server/miniflux.nix
-    ../system/server/navidrome.nix
-    ../system/server/seafile-oci.nix
+    ../specializations/openssh.nix
+    ../specializations/miniflux.nix
+    ../specializations/navidrome.nix
+    ../specializations/seafile-oci.nix
     ../system/universal
 
     ../user/shardion/universal

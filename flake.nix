@@ -14,7 +14,20 @@
     };
   };
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, nix-gaming, home-manager }: {
+
+
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, nix-gaming, home-manager }:
+    let
+      supportedSystems = [ "x86_64-linux" "aarch64-linux" ]; # The only systems I own
+      forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
+      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
+    in
+  {
+    packages = forAllSystems (system:
+      let pkgs = nixpkgs.legacyPackages.${system};
+      in import ./packages { inherit inputs pkgs; }
+    );
+
     nixosConfigurations.mocha = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";

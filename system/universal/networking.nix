@@ -37,16 +37,15 @@
       trustedInterfaces = [ "tailscale0" ];
     };
 
+    # resolvconf support
     resolvconf = {
-      enable = true;
       extraConfig = ''
         name_servers='100.100.100.100'
       '';
     };
 
-    # I am unsure if this is needed, but I am too scared to remove it.
+    # NetworkManager support
     networkmanager = {
-      enable = true;
       insertNameservers = [ "100.100.100.100" ];
     };
 
@@ -80,7 +79,7 @@
   # Configure some general Caddy settings
   # Does not enable Caddy
   services.caddy = {
-    virtualHosts."tama.tail354c3.ts.net" = {
+    virtualHosts."${config.networking.hostName}.tail354c3.ts.net" = {
       extraConfig = ''
         encode zstd gzip
       '';

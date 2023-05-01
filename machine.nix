@@ -7,8 +7,20 @@
 , character ? "💻"
 , description ? "No description."
 , hardware ? [ ]
-, users ? [ ]
-, roles ? [ "universal" "desktop" ]
-} @ args: 
+, users ? [ "shardion" ]
+, roles ? [ "desktop" ]
+, specializations ? [ ]
+} @ args: {
+  imports = [
+    
+  ] ++ map (role: "./system/" + role) roles
+    ++ map (specialization: "./specializations/" + specialization) specializations
+    ++ map (component: "./hardware/" + component) hardware
+    ++ map (user: map (role: "./user/" + user + role) roles) users;
 
+    name = name;
+    character = character;
+    description = description;
 
+    networking.hostName = name;
+}
