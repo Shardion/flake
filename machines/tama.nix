@@ -10,7 +10,6 @@
     ../extras/cdn.nix
     ../system/universal
 
-    ../extras/insecure-quad9.nix
     ../user/shardion/universal
   ];
 
