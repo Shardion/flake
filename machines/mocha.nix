@@ -11,7 +11,8 @@
 
     ../system/desktop/desktop-gnome.nix
     ../system/desktop/desktop-sway.nix
-    ../specializations/openssh.nix
+    ../extras/openssh.nix
+    ../extras/dnscrypt-quad9.nix
 
     ../user/shardion/desktop
   ];

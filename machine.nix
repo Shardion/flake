@@ -9,12 +9,12 @@
 , hardware ? [ ]
 , users ? [ "shardion" ]
 , roles ? [ "desktop" ]
-, specializations ? [ ]
+, extras ? [ ]
 } @ args: {
   imports = [
     
   ] ++ map (role: "./system/" + role) roles
-    ++ map (specialization: "./specializations/" + specialization) specializations
+    ++ map (extra: "./extras/" + extra) extras
     ++ map (component: "./hardware/" + component) hardware
     ++ map (user: map (role: "./user/" + user + role) roles) users;
 

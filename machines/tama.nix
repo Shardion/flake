@@ -3,13 +3,14 @@
 {
   # Tama, my Raspberry Pi 4B 8GB
   imports = [
-    ../specializations/openssh.nix
-    ../specializations/miniflux.nix
-    ../specializations/navidrome.nix
-    ../specializations/seafile-oci.nix
-    ../specializations/cdn.nix
+    ../extras/openssh.nix
+    ../extras/miniflux.nix
+    ../extras/navidrome.nix
+    ../extras/seafile-oci.nix
+    ../extras/cdn.nix
     ../system/universal
 
+    ../extras/insecure-quad9.nix
     ../user/shardion/universal
   ];
 
