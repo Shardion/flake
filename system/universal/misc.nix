@@ -9,7 +9,7 @@
   # "Obey EarlyOOM, kill swap!"
   swapDevices = lib.mkForce [ ];
   services.earlyoom.enable = true;
-  services.earlyoom.freeMemThreshold = 2;
+  services.earlyoom.freeMemThreshold = 1;
   services.earlyoom.freeSwapThreshold = 1;
 
   # Garbage collect the Nix store every once in a while
