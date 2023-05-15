@@ -8,6 +8,8 @@
     ../extras/navidrome.nix
     ../extras/seafile-oci.nix
     ../extras/cdn.nix
+    ../extras/tailscale.nix
+    ../extras/insecure-quad9.nix
     ../system/universal
 
     ../user/shardion/universal
