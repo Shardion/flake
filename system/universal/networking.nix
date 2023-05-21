@@ -2,7 +2,7 @@
 
 {
   networking = {
-    useDHCP = true;
+    useDHCP = lib.mkDefault true;
   };
 
   # Configure some general Caddy settings
