@@ -6,6 +6,7 @@
     instances = {
       nomifactory = {
         enable = true;
+        rsyncSSHKeys = [ ]; # This has to be specified for some reason
 
         jvmMaxAllocation = "6G";
         jvmInitialAllocation = "3G";
