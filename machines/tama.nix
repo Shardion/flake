@@ -10,6 +10,7 @@
     ../extras/cdn.nix
     ../extras/tailscale.nix
     ../extras/insecure-quad9.nix
+    ../extras/mms-nomifactory.nix
     ../system/universal
 
     ../user/shardion/universal

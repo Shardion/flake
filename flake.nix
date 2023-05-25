@@ -12,7 +12,7 @@
       url = github:nix-community/home-manager;
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    inputs.mms = {
+    mms = {
       url = "github:mkaito/nixos-modded-minecraft-servers";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -20,7 +20,7 @@
 
 
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, nix-gaming, home-manager }:
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, nix-gaming, home-manager, mms }:
     let
       supportedSystems = [ "x86_64-linux" "aarch64-linux" ]; # The only systems I own
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
