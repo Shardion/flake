@@ -26,7 +26,7 @@
 
         # (This implies we'll ever unlock flight)
         allow-flight = true;
-      }
+      };
     };
   };
 }
