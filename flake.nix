@@ -12,6 +12,10 @@
       url = github:nix-community/home-manager;
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    inputs.mms = {
+      url = "github:mkaito/nixos-modded-minecraft-servers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
 
@@ -46,6 +50,7 @@
         # tama doesn't have hardware-configuration.nix
         nixos-hardware.nixosModules.raspberry-pi-4
         home-manager.nixosModules.home-manager
+        mms.module
       ];
     };
   };
