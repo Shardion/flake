@@ -50,7 +50,6 @@
         # tama doesn't have hardware-configuration.nix
         nixos-hardware.nixosModules.raspberry-pi-4
         home-manager.nixosModules.home-manager
-        mms.module
       ];
     };
   };
