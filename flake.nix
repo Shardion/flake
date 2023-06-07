@@ -12,10 +12,6 @@
       url = github:nix-community/home-manager;
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    mms = {
-      url = "github:mkaito/nixos-modded-minecraft-servers";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
 
