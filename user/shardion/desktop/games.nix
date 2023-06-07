@@ -5,8 +5,6 @@
     inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
     pkgs.dwarf-fortress
     pkgs.dwarf-fortress-packages.dwarf-therapist
-    pkgs.prismlauncher
-    pkgs.mindustry-wayland
   ];
 
   programs.steam.enable = true;

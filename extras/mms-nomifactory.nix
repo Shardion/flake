@@ -1,4 +1,6 @@
-{ lib, config, pkgs, inputs, ... }:
+# commented due to fractureiser
+
+/*{ lib, config, pkgs, inputs, ... }:
 
 {
   services.modded-minecraft-servers = {
@@ -37,4 +39,4 @@
       };
     };
   };
-}
+}*/

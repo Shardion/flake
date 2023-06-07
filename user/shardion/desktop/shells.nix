@@ -14,7 +14,6 @@
         SDL_AUDIODRIVER = "pipewire";
 
         # I'm not sure if I still need these.
-        DOTNET_ROOT = "$(dirname $(dirname $(readlink $(whereis dotnet))))";
         GPG_TTY = "$(tty)";
       };
     };
