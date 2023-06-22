@@ -20,7 +20,7 @@
     # from automatically. Thus, Tama hosts the files for the latest version
     # of the game, which I manually update.
     url = "https://tama.tail354c3.ts.net/cdn/holocure-0.5.1676587910.zip";
-    sha256 = lib.fakeSha256;
+    sha256 = "sha256-nSLec9/UsM2m6Hdpr9gxAwo6fkk9KjeT/u8TFm/FRiE=";
   };
 
   # This game doesn't use an installer, so we just store it directly in the

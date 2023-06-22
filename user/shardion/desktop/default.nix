@@ -11,7 +11,7 @@
   ];
 
   users.users.shardion = {
-    extraGroups = [ "audio" "video" "networkmanager" ];
+    extraGroups = [ "audio" "video" "networkmanager" "plugdev" "adbusers" ];
   };
 
 
